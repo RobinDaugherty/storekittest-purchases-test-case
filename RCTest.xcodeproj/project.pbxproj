@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		062D0E0425783D5A00978122 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062D0E0325783D5A00978122 /* NativeViewController.swift */; };
+		062D0E082578401700978122 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 0682F3AF2572F69600E42D2A /* Configuration.storekit */; };
 		0682F3632572ED6200E42D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682F3622572ED6200E42D2A /* AppDelegate.swift */; };
 		0682F3652572ED6200E42D2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682F3642572ED6200E42D2A /* SceneDelegate.swift */; };
 		0682F3672572ED6200E42D2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682F3662572ED6200E42D2A /* ViewController.swift */; };
@@ -305,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062D0E082578401700978122 /* Configuration.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

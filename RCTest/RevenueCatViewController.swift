@@ -1,5 +1,5 @@
 //
-//  SalesViewController.swift
+//  RevenueCatViewController.swift
 //  RCTest
 //
 //  Created by Robin Daugherty on 2020-11-28.
@@ -8,7 +8,7 @@
 import UIKit
 import Purchases
 
-class SalesViewController: UIViewController {
+class RevenueCatViewController: UIViewController {
 
     @IBOutlet private weak var priceLabel: UILabel!
 
@@ -36,9 +36,11 @@ class SalesViewController: UIViewController {
                 debugPrint("Could not find 2020-08 offerings")
             }
 
-            DispatchQueue.main.async {
-                UIView.performWithoutAnimation {
-                    self.priceLabel.text = offering?.availablePackages.first?.localizedPriceString
+            if let package = offering?.availablePackages.first {
+                DispatchQueue.main.async {
+                    UIView.performWithoutAnimation {
+                        self.priceLabel.text = package.localizedPriceString
+                    }
                 }
             }
         }

@@ -16,19 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-Az-Jbn">
-                                <rect key="frame" x="102.66666666666669" y="418" width="170" height="30"/>
-                                <state key="normal" title="I want to give you money"/>
-                                <connections>
-                                    <segue destination="B8w-Ol-Ta3" kind="show" id="2qe-68-Xe9"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="otS-KK-pPH">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-Az-Jbn">
+                                        <rect key="frame" x="111" y="0.0" width="153" height="345"/>
+                                        <state key="normal" title="Load with RevenueCat"/>
+                                        <connections>
+                                            <segue destination="B8w-Ol-Ta3" kind="show" id="2qe-68-Xe9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfC-mH-fZX">
+                                        <rect key="frame" x="142" y="345" width="91" height="345"/>
+                                        <state key="normal" title="Load natively"/>
+                                        <connections>
+                                            <segue destination="emD-qU-w4N" kind="show" id="vOH-mC-8aP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="h1k-Az-Jbn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="SMK-ne-Bgg"/>
-                            <constraint firstItem="h1k-Az-Jbn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X4y-g0-X4y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="otS-KK-pPH" secondAttribute="trailing" id="ENj-bd-I4H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="otS-KK-pPH" secondAttribute="bottom" id="KJi-WF-v74"/>
+                            <constraint firstItem="otS-KK-pPH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nkx-JA-yN6"/>
+                            <constraint firstItem="otS-KK-pPH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z11-NU-sqs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="1VR-ey-JWv"/>
@@ -37,15 +51,15 @@
             </objects>
             <point key="canvasLocation" x="959.20000000000005" y="93.842364532019715"/>
         </scene>
-        <!--Sales View Controller-->
+        <!--Revenue Cat View Controller-->
         <scene sceneID="rFI-8T-Riu">
             <objects>
-                <viewController id="B8w-Ol-Ta3" customClass="SalesViewController" customModule="RCTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B8w-Ol-Ta3" customClass="RevenueCatViewController" customModule="RCTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OMK-FS-seK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkp-dK-Fh8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkp-dK-Fh8">
                                 <rect key="frame" x="0.0" y="422.66666666666669" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -86,6 +100,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRw-Y7-wbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="93.842364532019715"/>
+        </scene>
+        <!--Native View Controller-->
+        <scene sceneID="Aqc-Cf-dhK">
+            <objects>
+                <viewController id="emD-qU-w4N" customClass="NativeViewController" customModule="RCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="90U-i0-RRI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYq-Ii-fsv">
+                                <rect key="frame" x="0.0" y="422.66666666666669" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="47K-NV-Xry"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gYq-Ii-fsv" firstAttribute="centerY" secondItem="47K-NV-Xry" secondAttribute="centerY" id="cXo-d3-59F"/>
+                            <constraint firstItem="47K-NV-Xry" firstAttribute="trailing" secondItem="gYq-Ii-fsv" secondAttribute="trailing" id="vHH-BK-t3M"/>
+                            <constraint firstItem="gYq-Ii-fsv" firstAttribute="leading" secondItem="47K-NV-Xry" secondAttribute="leading" id="zga-B2-aT1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0aW-cu-JPg"/>
+                    <connections>
+                        <outlet property="priceLabel" destination="gYq-Ii-fsv" id="4y6-Ed-elu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwm-KE-DZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2577" y="430"/>
         </scene>
     </scenes>
     <resources>

@@ -1,0 +1,101 @@
+{
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "286E3BAB",
+      "localizations" : [
+
+      ],
+      "name" : "Harper Membership",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "99.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "C0D803B7",
+          "introductoryOffer" : {
+            "internalID" : "FEBB9D3C",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P2W"
+          },
+          "localizations" : [
+            {
+              "description" : "Your dog's all-access pass to Harper",
+              "displayName" : "Harper Membership",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dog.harper.subscription.annual202008",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Annual Membership",
+          "subscriptionGroupID" : "286E3BAB",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "12.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "696B0938",
+          "introductoryOffer" : {
+            "internalID" : "685B78A8",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Your dog's all-access pass to Harper",
+              "displayName" : "Harper Membership",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dog.harper.subscription.monthly202008",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Membership",
+          "subscriptionGroupID" : "286E3BAB",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "49.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "2AFA1D62",
+          "introductoryOffer" : {
+            "internalID" : "9908C6DF",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Your dog's all-access pass to Harper",
+              "displayName" : "Harper Membership",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dog.harper.subscription.annual202011",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Annual Membership (Nov 2020)",
+          "subscriptionGroupID" : "286E3BAB",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}
